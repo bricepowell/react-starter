@@ -21,8 +21,9 @@ Open the local URL printed by Vite.
 ## Structure
 
 - `src/main.tsx` — app entry, router and query client providers
-- `src/App.tsx` — navigation and route definitions
-- `src/pages/` — route components
+- `src/router.tsx` — route definitions
+- `src/App.tsx` — root layout with navigation
+- `src/pages/` — route components, including 404 and error pages
 - `src/api/client.ts` — shared `fetch` wrapper
 - `src/api/posts.ts` — example API calls
 - `src/hooks/usePosts.ts` — example TanStack Query hook

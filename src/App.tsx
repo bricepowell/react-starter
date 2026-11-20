@@ -1,6 +1,4 @@
-import { NavLink, Route, Routes } from 'react-router-dom'
-import HomePage from './pages/HomePage.tsx'
-import PostsPage from './pages/PostsPage.tsx'
+import { NavLink, Outlet } from 'react-router-dom'
 import './App.css'
 
 export default function App() {
@@ -13,11 +11,7 @@ export default function App() {
         </nav>
       </header>
       <main className="app-main">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/posts" element={<PostsPage />} />
-          <Route path="*" element={<p>Page not found.</p>} />
-        </Routes>
+        <Outlet />
       </main>
     </div>
   )
